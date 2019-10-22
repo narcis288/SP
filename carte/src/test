@@ -1,0 +1,16 @@
+public class test{
+
+    public static void main(String args[]){
+        Book titanic=new Book("Titanic");
+        Author Powl=new Author("Radu Powl");
+        titanic.addAuthor(Powl);
+        int indexofchapter = titanic.createCharacter("Chapter_One");
+        Chapeter chepone=titanic.getChapter(indexofchapter);
+        int indexofsubChapter=chepone.createsubchapter("chapter_one_one");
+        subchapter chp_one_one= chpone.getsubchapter(indexofsubChapter);
+        int getIndexofchapter=chp_one_one.createParagraph("Paragraf");
+        int getindexofimage=chp_one_one.createImage("Image");
+        int getindexofTable=chp_one_one.createtable("table1");
+    }
+
+}
